@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.example.glowedgecard.GlowEdgeCardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:ge_Width="20"
+            app:ge_Animation_mode="MODE_ROTATE_ANTICLOCKWISE"
+            app:ge_Animation_Color_type="MODE_COLOR_GREEN"
+            app:ge_Card_Corner_Radius="20"
+            >
+        </com.example.glowedgecard.GlowEdgeCardView>
+        <com.example.glowedgecard.GlowEdgeCardView
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:ge_Width="20"
+            app:ge_Animation_mode="MODE_ROTATE_CLOCKWISE"
+            app:ge_Animation_Color_type="MODE_COLOR_BLUE"
+            app:ge_Card_Corner_Radius="20"
+            >
+        </com.example.glowedgecard.GlowEdgeCardView>
+    </LinearLayout>
+
+</RelativeLayout>

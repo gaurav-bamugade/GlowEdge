@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GlowEdgeCardView">
+        <attr name="ge_Animation_mode" format="enum">
+            <enum name="MODE_ROTATE_CLOCKWISE" value="0" />
+            <enum name="MODE_ROTATE_ANTICLOCKWISE" value="1" />
+        </attr>
+        <attr name="ge_Animation_Color_type" format="enum">
+            <enum name="MODE_COLOR_RED" value="0" />
+            <enum name="MODE_COLOR_GREEN" value="1" />
+            <enum name="MODE_COLOR_BLUE" value="2" />
+            <enum name="MODE_COLOR_AQUA" value="3" />
+
+            <enum name="MODE_COLOR_PINK" value="4" />
+            <enum name="MODE_COLOR_PURPLE" value="5" />
+
+            <enum name="MODE_COLOR_RED_GREEN" value="6" />
+            <enum name="MODE_COLOR_RED_BLUE" value="7" />
+
+            <enum name="MODE_COLOR_BLUE_RED" value="8" />
+            <enum name="MODE_COLOR_BLUE_GREEN" value="9" />
+
+            <enum name="MODE_COLOR_GREEN_RED" value="10" />
+            <enum name="MODE_COLOR_GREEN_BLUE" value="11" />
+        </attr>
+
+        <attr name="ge_Rotation_Speed" format="integer"/>
+        <attr name="ge_Width" format="integer"/>
+        <attr name="ge_Card_Corner_Radius" format="integer"/>
+    </declare-styleable>
+</resources>
