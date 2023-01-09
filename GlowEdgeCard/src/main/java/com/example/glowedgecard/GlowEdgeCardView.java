@@ -20,12 +20,12 @@ public class GlowEdgeCardView extends CardView {
     static CardView frontCard;
     LinearLayout linear1;
     View rel1, rel2;
-    static int cornerRadius;
+    int cornerRadius;
     int rotateDuration ;
-    static int animationColorType;
-    static int animationRotateType;
+    int animationColorType;
+    int animationRotateType;
     static Animation rotateTop, rotateBot;
-    static int glowWidth;
+    int glowWidth;
 
 
     public GlowEdgeCardView(@NonNull Context context, @Nullable AttributeSet attrs) {
@@ -101,7 +101,7 @@ public class GlowEdgeCardView extends CardView {
     }
 
     //ANIMATION COLOR TYPE
-    public static int getAnimationColorType() {
+    public int getAnimationColorType() {
         int selectedColor=0;
         switch (animationColorType) {
             case 0: selectedColor = Color.RED;
@@ -117,24 +117,25 @@ public class GlowEdgeCardView extends CardView {
         }
         return selectedColor;
     }
-    public static void setAnimationColorType(int animationColorType) {
-        GlowEdgeCardView.animationColorType = animationColorType;
+
+    public void setAnimationColorType(int animationColorType) {
+        this.animationColorType = animationColorType;
     }
 
     //EDGE WIDTH
-    public static int getGlowWidth() {
+    public int getGlowWidth() {
         return glowWidth;
     }
-    public static void setGlowWidth(int glowWidth) {
-        GlowEdgeCardView.glowWidth = glowWidth;
+    public void setGlowWidth(int glowWidth) {
+        this.glowWidth = glowWidth;
     }
 
     //CARD CORNER RADIUS
-    public static int getCornerRadius() {
+    public int getCornerRadius() {
         return cornerRadius;
     }
-    public static void setCornerRadius(int cornerRadius) {
-        GlowEdgeCardView.cornerRadius = cornerRadius;
+    public void setCornerRadius(int cornerRadius) {
+        this.cornerRadius = cornerRadius;
     }
 
     //ROTATE SPEED/DURATION
@@ -171,7 +172,7 @@ public class GlowEdgeCardView extends CardView {
         return animationRotateType;
 
     }
-    public static void setAnimationRotateType(int animationRotateType) {
-        GlowEdgeCardView.animationRotateType = animationRotateType;
+    public void setAnimationRotateType(int animationRotateType) {
+        this.animationRotateType = animationRotateType;
     }
 }
