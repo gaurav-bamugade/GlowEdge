@@ -22,7 +22,7 @@ public class GlowEdgeCardView extends CardView {
     View rel1, rel2;
     static int cornerRadius;
     int rotateDuration ;
-    static int animationColorType;
+    int animationColorType;
     static int animationRotateType;
     static Animation rotateTop, rotateBot;
     static int glowWidth;
@@ -101,7 +101,7 @@ public class GlowEdgeCardView extends CardView {
     }
 
     //ANIMATION COLOR TYPE
-    public static int getAnimationColorType() {
+    public int getAnimationColorType() {
         int selectedColor=0;
         switch (animationColorType) {
             case 0: selectedColor = Color.RED;
@@ -117,8 +117,9 @@ public class GlowEdgeCardView extends CardView {
         }
         return selectedColor;
     }
-    public static void setAnimationColorType(int animationColorType) {
-        GlowEdgeCardView.animationColorType = animationColorType;
+
+    public void setAnimationColorType(int animationColorType) {
+        this.animationColorType = animationColorType;
     }
 
     //EDGE WIDTH
